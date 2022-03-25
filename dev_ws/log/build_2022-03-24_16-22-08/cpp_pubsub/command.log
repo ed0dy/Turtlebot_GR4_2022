@@ -1,0 +1,4 @@
+Invoking command in '/home/jean-pascal/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/jean-pascal/dev_ws/build/cpp_pubsub -- -j8 -l8
+Invoked command in '/home/jean-pascal/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/jean-pascal/dev_ws/build/cpp_pubsub -- -j8 -l8
+Invoking command in '/home/jean-pascal/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/jean-pascal/dev_ws/build/cpp_pubsub
+Invoked command in '/home/jean-pascal/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/jean-pascal/dev_ws/build/cpp_pubsub
