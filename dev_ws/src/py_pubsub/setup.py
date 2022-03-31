@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'talker = main_sub_laser_read:main',
+            'listener = main_sub_laser_read:main'
         ],
     },
 )

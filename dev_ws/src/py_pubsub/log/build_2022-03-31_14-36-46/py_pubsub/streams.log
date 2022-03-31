@@ -1,0 +1,25 @@
+[1.479s] Invoking command in '/home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub': PYTHONPATH=/home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/py_pubsub build --build-base /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/build/py_pubsub/build install --prefix /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub --record /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/build/py_pubsub/install.log --single-version-externally-managed
+[2.063s] running egg_info
+[2.064s] writing build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[2.064s] writing dependency_links to build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[2.065s] writing entry points to build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[2.065s] writing requirements to build/py_pubsub/py_pubsub.egg-info/requires.txt
+[2.065s] writing top-level names to build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[2.134s] reading manifest file 'build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.136s] writing manifest file 'build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.137s] running build
+[2.138s] running build_py
+[2.138s] copying py_pubsub/main_sub_laser_read.py -> /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub
+[2.138s] running install
+[2.140s] running install_lib
+[2.142s] copying /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub/main_sub_laser_read.py -> /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[2.144s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/main_sub_laser_read.py to main_sub_laser_read.cpython-38.pyc
+[2.147s] running install_data
+[2.148s] running install_egg_info
+[2.154s] removing '/home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[2.154s] Copying build/py_pubsub/py_pubsub.egg-info to /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[2.157s] running install_scripts
+[2.192s] Installing listener script to /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub/lib/py_pubsub
+[2.192s] Installing talker script to /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub/lib/py_pubsub
+[2.193s] writing list of installed files to '/home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/build/py_pubsub/install.log'
+[2.250s] Invoked command in '/home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/py_pubsub build --build-base /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/build/py_pubsub/build install --prefix /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/install/py_pubsub --record /home/jean-pascal/Turtlebot_GR4_2022/dev_ws/src/py_pubsub/build/py_pubsub/install.log --single-version-externally-managed
