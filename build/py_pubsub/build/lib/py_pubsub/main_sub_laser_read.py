@@ -17,7 +17,6 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 import math
-import time
 
 from std_msgs.msg import String
 
@@ -26,11 +25,10 @@ from rclpy.qos import QoSProfile, qos_profile_sensor_data
 
 TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
-P_LIN= 0.08
-P_ROT= 1.5
-
-DIST_MIN = 0.4
-DIST_MAX = 0.9
+P_LIN=0.2
+P_ROT=3.0
+DIST_MIN = 0.5
+DIST_MAX = 1.0
 DIST_MOY = (DIST_MAX + DIST_MIN) / 2
 
 class MinimalSubscriber(Node):
@@ -47,15 +45,15 @@ class MinimalSubscriber(Node):
         
         sum_x = 0
         sum_y = 0
-        nb_valeur = 0
+        nb_valeur =0
 
         for i in range(360):
             print(msg.ranges[i], msg.intensities[i])
-            print(msg.ranges[300], msg.angle_max*180/math.pi) # Modif ranges 300 to 360
+            print(msg.ranges[300], msg.angle_max*180/math.pi)
             print(msg.ranges[i], msg.scan_time)
             
 
-            if i>339 or i<20:
+            if i>339 or i<10:
                 if msg.ranges[i]>DIST_MIN and msg.ranges[i]<DIST_MAX:
                     nb_valeur += 1
                     x = msg.ranges[i] * math.cos(math.radians(i))
@@ -69,20 +67,13 @@ class MinimalSubscriber(Node):
         if nb_valeur !=0:
             moyenne_x = sum_x / nb_valeur
             moyenne_y = sum_y / nb_valeur
-
-            print("X : ",x)
-            print("Y : ",y)
-
-            # time.sleep(3) # Sleep for 3 seconds
-      
+                
             lin_vel = (moyenne_x + DIST_MOY) * P_LIN
             rot_vel = (moyenne_y) * P_ROT
-
         else:
             lin_vel = 0.0
             rot_vel = 0.0
 
-        
         print("Vitesse lineaire : ",lin_vel)
         print("Vitesse rotationelle : ",rot_vel)
 

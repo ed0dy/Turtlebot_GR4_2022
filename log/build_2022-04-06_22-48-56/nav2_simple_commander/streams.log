@@ -1,0 +1,71 @@
+[0.849s] Invoking command in '/home/jean-pascal/Turtlebot_GR4_2022/WIP/foxy_nav2_navigator': PYTHONPATH=/home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_simple_commander build --build-base /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build install --prefix /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander --record /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/install.log --single-version-externally-managed
+[1.037s] running egg_info
+[1.037s] creating ../../build/nav2_simple_commander/nav2_simple_commander.egg-info
+[1.038s] writing ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/PKG-INFO
+[1.038s] writing dependency_links to ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/dependency_links.txt
+[1.038s] writing entry points to ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/entry_points.txt
+[1.038s] writing requirements to ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/requires.txt
+[1.038s] writing top-level names to ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/top_level.txt
+[1.039s] writing manifest file '../../build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[1.068s] reading manifest file '../../build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[1.069s] writing manifest file '../../build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[1.070s] running build
+[1.070s] running build_py
+[1.070s] creating /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build
+[1.070s] creating /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib
+[1.071s] creating /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] copying nav2_simple_commander/example_nav_through_poses.py -> /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] copying nav2_simple_commander/__init__.py -> /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] copying nav2_simple_commander/working_on_foxy.py -> /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] copying nav2_simple_commander/example_nav_to_pose.py -> /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] copying nav2_simple_commander/example_waypoint_follower.py -> /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] copying nav2_simple_commander/demo_picking.py -> /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] copying nav2_simple_commander/demo_inspection.py -> /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] copying nav2_simple_commander/robot_navigator.py -> /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] copying nav2_simple_commander/demo_security.py -> /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.071s] running install
+[1.071s] running install_lib
+[1.072s] creating /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.072s] copying /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander/example_nav_through_poses.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.072s] copying /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander/__init__.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.073s] copying /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander/working_on_foxy.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.073s] copying /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander/example_nav_to_pose.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.073s] copying /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander/example_waypoint_follower.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.073s] copying /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander/demo_picking.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.073s] copying /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander/demo_inspection.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.073s] copying /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander/robot_navigator.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.073s] copying /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build/lib/nav2_simple_commander/demo_security.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander
+[1.073s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander/example_nav_through_poses.py to example_nav_through_poses.cpython-38.pyc
+[1.075s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander/__init__.py to __init__.cpython-38.pyc
+[1.075s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander/working_on_foxy.py to working_on_foxy.cpython-38.pyc
+[1.077s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander/example_nav_to_pose.py to example_nav_to_pose.cpython-38.pyc
+[1.077s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander/example_waypoint_follower.py to example_waypoint_follower.cpython-38.pyc
+[1.077s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander/demo_picking.py to demo_picking.cpython-38.pyc
+[1.078s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander/demo_inspection.py to demo_inspection.cpython-38.pyc
+[1.078s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander/robot_navigator.py to robot_navigator.cpython-38.pyc
+[1.081s] byte-compiling /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander/demo_security.py to demo_security.cpython-38.pyc
+[1.081s] running install_data
+[1.082s] creating /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/ament_index
+[1.082s] creating /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/ament_index/resource_index
+[1.082s] creating /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[1.082s] copying resource/nav2_simple_commander -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[1.082s] copying package.xml -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/warehouse.world -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/security_demo_launch.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/nav_through_poses_example_launch.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/picking_demo_launch.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/inspection_demo_launch.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/waypoint_follower_example_launch.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/nav2_simple_commander
+[1.083s] copying launch/nav_to_pose_example_launch.py -> /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/share/nav2_simple_commander
+[1.083s] running install_egg_info
+[1.084s] Copying ../../build/nav2_simple_commander/nav2_simple_commander.egg-info to /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages/nav2_simple_commander-1.0.0-py3.8.egg-info
+[1.084s] running install_scripts
+[1.100s] Installing demo_inspection script to /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.100s] Installing demo_picking script to /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.100s] Installing demo_security script to /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.100s] Installing example_nav_through_poses script to /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.100s] Installing example_nav_to_pose script to /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.100s] Installing example_waypoint_follower script to /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.100s] Installing working_on_foxy script to /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.101s] writing list of installed files to '/home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/install.log'
+[1.133s] Invoked command in '/home/jean-pascal/Turtlebot_GR4_2022/WIP/foxy_nav2_navigator' returned '0': PYTHONPATH=/home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_simple_commander build --build-base /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/build install --prefix /home/jean-pascal/Turtlebot_GR4_2022/install/nav2_simple_commander --record /home/jean-pascal/Turtlebot_GR4_2022/build/nav2_simple_commander/install.log --single-version-externally-managed
