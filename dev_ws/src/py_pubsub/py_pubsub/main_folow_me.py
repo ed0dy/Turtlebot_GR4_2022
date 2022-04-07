@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import os
+from turtle import rt
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
@@ -33,17 +34,21 @@ DIST_MIN = 0.4
 DIST_MAX = 0.9
 DIST_MOY = (DIST_MAX + DIST_MIN) / 2
 
-class MinimalSubscriber(Node):
+RTH = 0
+COUNT = 0
 
+class Node(Node):
+    
     def __init__(self):
+
         super().__init__('minimal_subsciber')
-        self.subscription = self.create_subscription(LaserScan,'scan',self.listener_callback,qos_profile_sensor_data)
+        self.subscription = self.create_subscription(LaserScan,'scan',self.boucle,qos_profile_sensor_data)
         self.pub = self.create_publisher(Twist,'cmd_vel', 10)
         self.subscription  # prevent unused variable warning
+        #self.tempo_mode = time.time()
 
-        
-    def listener_callback(self, msg):
-        # self.get_logger().info('I heard: "%s"' % qos_profile_sensor_data.data)
+    
+    def folow_me(self, msg):
         
         sum_x = 0
         sum_y = 0
@@ -51,9 +56,9 @@ class MinimalSubscriber(Node):
 
         for i in range(360):
             print(msg.ranges[i], msg.intensities[i])
-            print(msg.ranges[300], msg.angle_max*180/math.pi) # Modif ranges 300 to 360
+            print(msg.ranges[300], msg.angle_max*180/math.pi)
             print(msg.ranges[i], msg.scan_time)
-            
+                
 
             if i>339 or i<20:
                 if msg.ranges[i]>DIST_MIN and msg.ranges[i]<DIST_MAX:
@@ -70,21 +75,14 @@ class MinimalSubscriber(Node):
             moyenne_x = sum_x / nb_valeur
             moyenne_y = sum_y / nb_valeur
 
-            print("X : ",x)
-            print("Y : ",y)
-
             # time.sleep(3) # Sleep for 3 seconds
-      
+        
             lin_vel = (moyenne_x + DIST_MOY) * P_LIN
             rot_vel = (moyenne_y) * P_ROT
 
         else:
             lin_vel = 0.0
             rot_vel = 0.0
-
-        
-        print("Vitesse lineaire : ",lin_vel)
-        print("Vitesse rotationelle : ",rot_vel)
 
 
         twist = Twist()
@@ -97,39 +95,36 @@ class MinimalSubscriber(Node):
         twist.angular.y = 0.0
         twist.angular.z = rot_vel # -2.84 > +2.84
 
+        print("Vitesse lineaire : ",lin_vel)
+        print("Vitesse rotationelle : ",rot_vel)
         self.pub.publish(twist)
-        print("Publier au robot !")
-       
-        #TODO
+        print("MODE FOLOW ME")
+        return lin_vel
 
-class MinimalPublisher(Node):
+        
 
-    def __init__(self):
-        super().__init__('minimal_subsciber')
-        #self.pub = self.create_publisher(Twist,'cmd_vel', 10)
-        #self.subscription  # prevent unused variable warning
+    def boucle(self, msg):
 
+        vitesse = Node.folow_me(self, msg)
+        print("Vitesse",vitesse)
 
-
+        if vitesse == 0.0:
+            time.sleep(3.0)
+            vitesse = Node.folow_me(self, msg)
+            if vitesse == 0.0:
+                print("MODE RETOUR BASE")
+                time.sleep(1.0)
 
 
 def main(args=None):
+
     rclpy.init(args=args)
-    #qos = QoSProfile(depth=10)
+    minimal_subscriber = Node()
     
-    minimal_subscriber = MinimalSubscriber()
-    minimal_publisher = MinimalPublisher()
-
-
-    #TODO
-
     rclpy.spin(minimal_subscriber)
-    rclpy.spin(minimal_publisher)
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
+
+    #DESTRUCTION DU NODE
     minimal_subscriber.destroy_node()
-    minimal_publisher.destroy_node()
     rclpy.shutdown()
 
 
