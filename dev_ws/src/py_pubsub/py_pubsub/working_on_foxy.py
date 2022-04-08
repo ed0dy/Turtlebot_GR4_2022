@@ -303,6 +303,10 @@ class BasicNavigatorFoxy(Node):
 
     def patrol_demo(self) :
         security_route = [
+            [17,-1.07,0.00247],
+            [17.5,-7.16,-0.00534],
+            [16.8,-8.47,0.00247],
+            [14.6,-7.51,0.00247],
             [9.62,-8.44,0.189]]
 
         pose = PoseStamped()
@@ -318,7 +322,7 @@ class BasicNavigatorFoxy(Node):
 
 
 def main() :
-    rclpy.init()
+    #rclpy.init()
 
     navigator = BasicNavigatorFoxy()
 

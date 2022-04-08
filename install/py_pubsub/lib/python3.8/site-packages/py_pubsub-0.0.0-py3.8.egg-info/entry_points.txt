@@ -1,4 +1,4 @@
 [console_scripts]
-listener = main_sub_laser_read:main
-talker = main_sub_laser_read:main
+listener = main_folow_me
+talker = main_folow_me
 

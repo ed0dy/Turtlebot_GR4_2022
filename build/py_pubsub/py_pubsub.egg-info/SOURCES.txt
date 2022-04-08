@@ -9,8 +9,8 @@ setup.py
 ../../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
 ../../../build/py_pubsub/py_pubsub.egg-info/zip-safe
 py_pubsub/__init__.py
-py_pubsub/main_sub_laser_read.py
-py_pubsub/publisher_member_function.py
+py_pubsub/main_folow_me.py
+py_pubsub/working_on_foxy.py
 resource/py_pubsub
 test/test_copyright.py
 test/test_flake8.py
